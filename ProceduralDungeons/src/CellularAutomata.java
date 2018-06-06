@@ -20,7 +20,6 @@ public class CellularAutomata
 
 	public static void RandomizeChunk() 
 	{
-		boolean[][] temp = new boolean[Width][Height];
 		for(int y = 0; y < Height; y++)
 			for(int x = 0; x < Width; x++) 
 				Chunk[x][y] = (srandom.nextFloat() < FillChance) ? true : false;
